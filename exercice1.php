@@ -81,3 +81,6 @@ class Product {
     }
 
 }
+
+$produit = new Product("yaourt", 9.9, 0.2);
+echo "prix TTC :" . $produit->getPriceWithVat();
