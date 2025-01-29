@@ -13,7 +13,7 @@
  */
 require_once "exercice1.php";
 class ShoppingCart {
-    protected array $items;
+    protected array $items = [];
     protected float $total;
 
     public function __construct()
@@ -64,5 +64,6 @@ class ShoppingCart {
 $cart = new ShoppingCart();
 $cart->addArticle($produit);
 $cart->addArticle($produit);
+$cart->addArticle($produit2);
 echo $cart->showCart();
 echo "total : ". $cart->getTotal();
